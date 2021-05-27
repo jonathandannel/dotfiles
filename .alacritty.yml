@@ -1,0 +1,109 @@
+window:
+  padding:
+    x: 2
+    y: 0
+font:
+  normal:
+    family: MesloLGLDZ Nerd Font
+    style: Regular
+  size: 8
+colors:
+  name: Neon
+  author: ""
+  primary:
+    background: "#1D1F21"
+    foreground: "#f8f8f8"
+  cursor:
+    text: "#171717"
+    cursor: "#f8f8f8"
+  normal:
+    black: "#171717"
+    red: "#d81765"
+    green: "#97d01a"
+    yellow: "#ffa800"
+    blue: "#16b1fb"
+    magenta: "#ff2491"
+    cyan: "#0fdcb6"
+    white: "#ebebeb"
+  bright:
+    black: "#38252c"
+    red: "#ff0000"
+    green: "#76b639"
+    yellow: "#e1a126"
+    blue: "#289cd5"
+    magenta: "#ff2491"
+    cyan: "#0a9b81"
+    white: "#f8f8f8"
+#nord
+#colors:
+  #primary:
+    #background: '#2e3440'
+    #foreground: '#d8dee9'
+    #dim_foreground: '#a5abb6'
+  #cursor:
+    #text: '#2e3440'
+    #cursor: '#d8dee9'
+  #vi_mode_cursor:
+    #text: '#2e3440'
+    #cursor: '#d8dee9'
+  #selection:
+    #text: CellForeground
+    #background: '#4c566a'
+  #search:
+    #matches:
+      #foreground: CellBackground
+      #background: '#88c0d0'
+    #bar:
+      #background: '#434c5e'
+      #foreground: '#d8dee9'
+  #normal:
+    #black: '#3b4252'
+    #red: '#bf616a'
+    #green: '#a3be8c'
+    #yellow: '#ebcb8b'
+    #blue: '#81a1c1'
+    #magenta: '#b48ead'
+    #cyan: '#88c0d0'
+    #white: '#e5e9f0'
+  #bright:
+    #black: '#4c566a'
+    #red: '#bf616a'
+    #green: '#a3be8c'
+    #yellow: '#ebcb8b'
+    #blue: '#81a1c1'
+    #magenta: '#b48ead'
+    #cyan: '#8fbcbb'
+    #white: '#eceff4'
+  #dim:
+    #black: '#373e4d'
+    #red: '#94545d'
+    #green: '#809575'
+    #yellow: '#b29e75'
+    #blue: '#68809a'
+    #magenta: '#8c738c'
+    #cyan: '#6d96a5'
+    #white: '#aeb3bb'
+#colors:
+  #name: hund
+  #author: hund
+  #primary:
+    #background: "#1F1F24"
+    #foreground: "#FFFFFF"
+  #normal:
+    #black: "#101010"
+    #red: "#E84F4F"
+    #green: "#B7CE42"
+    #yellow: "#FEA63C"
+    #blue: "#66AABB"
+    #magenta: "#B7416E"
+    #cyan: "#6D878D"
+    #white: "#DDDDDD"
+  #bright:
+    #black: "#666666"
+    #red: "#D23D3D"
+    #green: "#BDE077"
+    #yellow: "#FFE863"
+    #blue: "#AACCBB"
+    #magenta: "#E16A98"
+    #cyan: "#42717B"
+    #white: "#CCCCCC"
