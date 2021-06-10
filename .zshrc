@@ -1,29 +1,34 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/jonathan/.oh-my-zsh"
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-ZSH_THEME="half-life"
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=blue,bold,underline"
 
-source $ZSH/oh-my-zsh.sh
+zstyle :compinstall filename '/home/jonathan/.zshrc'
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
+autoload -Uz compinit
+compinit
+
+alias ls='ls --color=auto'
+alias l='ls --color=auto'
 
 alias web="cd ~/WORK/areo-web"
 alias home="cd ~/WORK/areo-home"
 alias lib="cd ~/WORK/areo-lib"
 alias api="cd ~/WORK/areo-api"
 alias admin="cd ~/WORK/areo-admin"
-alias cli="cd ~/WORK/areo-cli"
 
-# Paths
 export PATH=$PATH:~/.emacs.d/bin
+export PATH=$PATH:~/VSCode-linux-x64/bin
+export PATH="$(yarn global bin):$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -32,5 +37,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #yarn
-export PATH="$(yarn global bin):$PATH"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
